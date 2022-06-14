@@ -59,7 +59,7 @@ class iMultiply {
             return "Error"
         }
         
-        questionNumber += 2
+        questionNumber += 1
         
         if answerInt == question.answer {
             score += 1
