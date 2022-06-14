@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F531907628581B7900B052AF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F531907528581B7900B052AF /* main.swift */; };
+		F53190832858F89F00B052AF /* iMultiplyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53190822858F89F00B052AF /* iMultiplyTests.swift */; };
+		F53190872858F8E200B052AF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F531907528581B7900B052AF /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,19 @@
 /* Begin PBXFileReference section */
 		F531907228581B7900B052AF /* iMultiply */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iMultiply; sourceTree = BUILT_PRODUCTS_DIR; };
 		F531907528581B7900B052AF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F53190802858F89F00B052AF /* iMultiplyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMultiplyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53190822858F89F00B052AF /* iMultiplyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMultiplyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F531906F28581B7900B052AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F531907D2858F89F00B052AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				F531907428581B7900B052AF /* iMultiply */,
+				F53190812858F89F00B052AF /* iMultiplyTests */,
 				F531907328581B7900B052AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				F531907228581B7900B052AF /* iMultiply */,
+				F53190802858F89F00B052AF /* iMultiplyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +73,14 @@
 				F531907528581B7900B052AF /* main.swift */,
 			);
 			path = iMultiply;
+			sourceTree = "<group>";
+		};
+		F53190812858F89F00B052AF /* iMultiplyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F53190822858F89F00B052AF /* iMultiplyTests.swift */,
+			);
+			path = iMultiplyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +103,23 @@
 			productReference = F531907228581B7900B052AF /* iMultiply */;
 			productType = "com.apple.product-type.tool";
 		};
+		F531907F2858F89F00B052AF /* iMultiplyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53190842858F89F00B052AF /* Build configuration list for PBXNativeTarget "iMultiplyTests" */;
+			buildPhases = (
+				F531907C2858F89F00B052AF /* Sources */,
+				F531907D2858F89F00B052AF /* Frameworks */,
+				F531907E2858F89F00B052AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMultiplyTests;
+			productName = iMultiplyTests;
+			productReference = F53190802858F89F00B052AF /* iMultiplyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +131,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					F531907128581B7900B052AF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F531907F2858F89F00B052AF = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -111,9 +152,20 @@
 			projectRoot = "";
 			targets = (
 				F531907128581B7900B052AF /* iMultiply */,
+				F531907F2858F89F00B052AF /* iMultiplyTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F531907E2858F89F00B052AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F531906E28581B7900B052AF /* Sources */ = {
@@ -121,6 +173,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F531907628581B7900B052AF /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F531907C2858F89F00B052AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53190872858F8E200B052AF /* main.swift in Sources */,
+				F53190832858F89F00B052AF /* iMultiplyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +304,7 @@
 		F531907A28581B7900B052AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KK8LZT3N2;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -254,10 +316,41 @@
 		F531907B28581B7900B052AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KK8LZT3N2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F53190852858F89F00B052AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KK8LZT3N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NeetoMosquito.iMultiplyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F53190862858F89F00B052AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KK8LZT3N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NeetoMosquito.iMultiplyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -279,6 +372,15 @@
 			buildConfigurations = (
 				F531907A28581B7900B052AF /* Debug */,
 				F531907B28581B7900B052AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53190842858F89F00B052AF /* Build configuration list for PBXNativeTarget "iMultiplyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53190852858F89F00B052AF /* Debug */,
+				F53190862858F89F00B052AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
